@@ -5,6 +5,7 @@
         {
           "appID": "55377VK7X2.net.kortina.labs.Venmo.debug",
           "paths": [
+            "/appclip",
             "/*/feed-suggested-businesses",
             "/*/deals-hub",
             "/payment/",
@@ -214,7 +215,8 @@
         {
             "appID": "55377VK7X2.net.kortina.labs.Venmo.QRCPartnerApp",
             "paths": [
-              "*"
+              "*",
+              "/braintree/checkout/"
             ]
         }
       ]
@@ -228,6 +230,6 @@
       ]
     },
       "appclips": {
-          "apps": ["55377VK7X2.net.kortina.labs.QRCPartnerApp.PayWithVenmoAppChip"]
+          "apps": ["55377VK7X2.net.kortina.labs.Venmo.debug.QRCPartnerPayWithVenmoAppChipDebug"]
       }
   }
