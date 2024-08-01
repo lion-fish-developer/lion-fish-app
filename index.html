@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-id=1529940729, app-clip-bundle-id=6DEPQ9SPDK.net.kortina.labs.QRCPartnerApp.PayWithVenmoAppChip">
+    <title>Sample Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>We sell hats!</p>
+    
+    <!-- Button for Universal Link -->
+    <button onclick="triggerUniversalLink()">Open Universal Link</button>
+
+    <!-- Button for App Clip -->
+    <button onclick="triggerAppClip()">Open App Clip</button>
+
+    <script>
+        function triggerUniversalLink() {
+            window.location.href = 'https://venmo.com/braintree/checkout';
+        }
+
+        function triggerAppClip() {
+            window.location.href = 'https://venmo.com/appclip';
+        }
+    </script>
+</body>
+</html>
