@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=351727428, app-clip-bundle-id=55377VK7X2.net.kortina.labs.Venmo.debug.QRCPartnerPayWithVenmoAppChipDebug">
+    <meta name="apple-itunes-app" content="app-clip-bundle-id=net.kortina.labs.Venmo.debug.QRCPartnerChipVenmoDebug">
     <title>Merchant Web Page</title>
     <style>
         body {
@@ -22,22 +22,16 @@
     <h1>Hello, World!</h1>
     <p>We sell hats!</p>
     
-    <!-- Button for Universal Link -->
     <button onclick="triggerUniversalLink()">Open Universal Link</button>
 
-    <!-- Button for App Clip -->
     <button onclick="triggerAppClip()">Open App Clip</button>
 
-        <!-- Button for Universal Link -->
         <button onclick="triggerUniversalLink2()">Open Universal Link 2</button>
 
-        <!-- Button for App Clip -->
         <button onclick="triggerAppClip2()">Open App Clip 2</button>
 
-                <!-- Button for Universal Link -->
                 <button onclick="triggerUniversalLink3()">Open Universal Link 3</button>
 
-                <!-- Button for App Clip -->
                 <button onclick="triggerAppClip3()">Open App Clip 3</button>
 
     <script>
@@ -46,11 +40,11 @@
         }
 
         function triggerAppClip() {
-            window.location.href = 'https://venmo.com/appclip';
+            window.location.href = 'venmo.com';
         }
 
         function triggerUniversalLink2() {
-            window.location.href = 'https://lionfish-app-zy3vp.ondigitalocean.app';
+            window.location.href = 'https://lionfish-app-zy3vp.ondigitalocean.app/braintree/checkout';
         }
 
         function triggerAppClip2() {
@@ -66,4 +60,18 @@
         }
     </script>
 </body>
-</html>
+</html> 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-itunes-app" content="app-clip-bundle-id=net.kortina.labs.Venmo.debug.QRCPartnerChipVenmoDebug">
+    <title>Launch App Clip</title>
+</head>
+<body>
+    <h1>Launch My App Clip</h1>
+    <a href="https://localhost:8443/path/to/content">Open App Clip</a>
+</body>
+</html> -->
