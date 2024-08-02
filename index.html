@@ -21,6 +21,14 @@
 <body>
     <h1>Hello, World!</h1>
     <p>We sell hats!</p>
+
+    <button id="launchAppClip">Launch App Clip</button>
+
+<script>
+    document.getElementById('launchAppClip').addEventListener('click', function() {
+    window.location.href = 'https://lionfish-app-zy3vp.ondigitalocean.app/appclip';
+    });
+</script>
     
     <button onclick="triggerUniversalLink()">Open Universal Link</button>
 
